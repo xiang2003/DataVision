@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>李宇翔的資料視覺化作業</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#work2" class="icon solid fa-folder"><span>Work2</span></a>
+						<a href="#work3" class="icon solid fa-folder"><span>Work3</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>李宇翔111502012</h1>
+									<p>資料視覺化作業</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- HW1 -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Homework1 折線圖</h2>
+								</header>
+								<h3>
+									身高體重變化
+								</h3>
+								<p>可以從以下的圖表中看出，隨著時間的身高體重變化。</p>
+								<p>將身高體重分別存入一個trace中，並利用button控制可以全看，或只看一個。</p>
+								<section>
+									<div id="myGraph"></div>
+								</section>
+							</article>
+						<!-- HW2 -->
+							<article id="work2" class="panel">
+								<header>
+									<h2>Homework2 長條圖</h2>
+								</header>
+								<h3>
+									11-15屆總統大選結果
+								</h3>
+								<p>可以看出各屆是哪個黨派贏出了選舉，也能看出各黨的得票情況，以及總票數的多寡。</p>
+								<P>將各個黨派的屆數、得票數分別存入trace，並且利用stack mode，可以看出當屆得票數多寡。</P>
+								<section>
+									<div id="myGraph2"></div>
+								</section>
+							</article>
+						<!-- HW3 -->
+						<article id="work3" class="panel">
+							<header>
+								<h2>Homework3 圓餅圖</h2>
+							</header>
+							<h3>
+								台電歷年發購電量
+								
+							</h3>
+							<p>近年來，政府不斷的在推動非核家園，因此核能的總發電量及占比都逐年下降，取而代之，再生能源的比例逐年上升。</p>
+							<p>使用D3將electricity.csv的資料導出，而我只使用近期4年的紀錄，但是因為column裡面每個資料的名稱為發電方式，因此先將這些發電方式的名稱存入list中，再用res[0][list[x]]處理資料</p>
+							<a href="https://www.taipower.com.tw/tc/page.aspx?mid=212&cid=120&cchk=f3a1b1e0-03e5-45fa-b72e-b28c5cb94f37">資料來源</a>
+							<section>
+								<div id="myGraph3"></div>
+							</section>
+						</article>
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
+			<script src="//unpkg.com/d3"></script>
+			<script src="HW1/data.js"></script>
+			<script src="HW1/main.js"></script>
+			<script src="HW2/data2.js"></script>
+			<script src="HW2/main2.js"></script>
+			<script src="HW3/data3.js"></script>
+			<script src="HW3/main3.js"></script>
+
+	</body>	
+</html>
