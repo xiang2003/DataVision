@@ -46,6 +46,27 @@ let layout2 =
     title:"各屆總統大選",
     margin:{t:50},
     barmode:"stack",
+    updatemenus:[
+        {
+            y:1.2,
+            x:0.3,
+            yanchor:'top',
+            'buttons': [
+                {
+                    'args': [{'barmode': 'stack'}],
+                    'label': 'Stack',
+                    'method': 'relayout'
+                },
+                {
+                    'args': [{'barmode': 'group'}],
+                    'label': 'Group',
+                    'method': 'relayout'
+                },
+            ]
+        }
+    ]
+
 
 };
 Plotly.newPlot(myGraph2, data2, layout2);
+

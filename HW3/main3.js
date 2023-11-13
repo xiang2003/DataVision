@@ -1,12 +1,12 @@
 d3.csv('electricity.csv').then(
     res=>{
         console.log(res)
-        solve(res)
+        solve3(res)
     }
 );
 
 
-function solve(res){
+function solve3(res){
     let myGraph3=document.getElementById('myGraph3');
     type = ["再生能源", "抽蓄水力", "核能", "汽電共生", "燃氣", "燃油", "燃煤"];
 
